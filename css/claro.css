@@ -1,0 +1,135 @@
+:root {
+    --background-color: rgb(235, 235, 235);
+    color: rgb(22, 3, 3);
+
+}
+
+.estudios {
+    background-color: azure;
+}
+.cursos {
+    background-color: azure;
+}
+.experiencialaboral {
+    background-color: azure;
+}
+
+.aptitudesblandas {
+    background-color: azure;
+}
+.aptitudesduras {
+    background-color: azure;
+}
+
+
+
+.verCertificado1{
+  
+   border-color: rgb(127, 255, 212);
+   background-color: rgba(209, 208, 208, 0.705);
+        color: rgb(21, 23, 26);
+}
+.verCertificado2{
+
+   border-color: rgb(127, 255, 212);
+   background-color: rgba(221, 221, 221, 0.705);
+        color: rgb(11, 11, 12);
+}
+
+
+.presentacion {
+
+    background-color: azure;
+    color: black;
+}
+
+.presentacion .grillainformacion h3 {
+    color: rgb(7, 7, 7);
+
+}
+
+.presentacion .grillainformacion {
+    color: rgb(0, 0, 0);
+}
+
+.download{
+    background-color: aliceblue;
+    color: rgba(0, 0, 0, 0.767);
+}
+
+.download:hover {
+    background-color: rgb(214, 236, 236);
+ 
+    box-shadow: 0 0 15px rgba(115, 115, 192, 0.308),
+        0 0 45px rgba(115, 115, 192, 0.300),
+        0 0 75px rgba(115, 115, 192, 0.300),
+        0 0 115px rgba(115, 115, 192, 0.300);
+    border: none;
+}
+
+
+.download a {
+    text-decoration: none;
+    
+    color: rgb(68, 65, 62);
+}
+
+.download:hover a{
+    color: rgb(0, 0, 0);
+}
+
+.download:visited{
+    color: rgba(14, 66, 66, 0.692);
+}
+
+.mail {
+    color: rgb(65, 0, 245);
+}
+
+.mail:hover {
+    color: rgb(237, 0, 245);
+}
+
+
+
+#titulo_nombre {
+
+    color: rgb(0, 0, 0);
+
+}
+
+
+.formulario {
+
+    background-color: rgba(250, 247, 247, 0.507);
+    color: rgba(0, 0, 0, 0.233);
+
+}
+
+.formulario {
+   
+    color: rgba(22, 24, 26, 0.308);
+  }
+
+  .formulario__label {
+    z-index: -20;
+    color: rgb(2, 2, 2);
+   
+}
+
+.formulario__input {
+      color: rgba(0, 0, 0, 0.521);
+}
+
+
+.titulo_formulario {
+    color: rgb(1, 16, 29);
+}
+
+#final{color: rgb(2, 2, 2); }
+
+#final3 {
+
+    color: rgba(0, 0, 0, 0.473);
+    text-shadow: 0 0 3px #05cff39a, 0 0 6px #05b0f357, 0 0 12px #05f3f362, 0 0 24px #05f3e76b, 0 0 50px #05f3e777;
+}

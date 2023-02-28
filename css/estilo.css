@@ -1,0 +1,869 @@
+* {
+
+    margin: 0;
+    padding: 0;
+
+
+}
+
+html {
+    width: 100%;
+}
+
+h1 {
+    color: black;
+
+
+}
+
+h2 {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+h3 {
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+}
+
+header {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.945);
+
+}
+
+
+body {
+    background-color: var(--background-color);
+    width: 100%;
+
+}
+
+
+
+.logo {
+    width: 20%;
+    height: 100px;
+    background-color: black;
+    float: left;
+    margin: auto;
+    justify-content: center;
+    position: relative;
+}
+
+.imglogo {
+    top: 15;
+    left: 15;
+    width: 20%;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    position: absolute;
+}
+
+.imglogohover {
+    position: absolute;
+    top: 15;
+    left: 15;
+    width: 20%;
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.imglogohover:hover {
+    opacity: 100;
+}
+
+.menuprincipal {
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    margin: auto;
+}
+
+.menunavegacion {
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    list-style: none;
+    float: left;
+    width: 75%;
+    height: 100px;
+}
+
+.menunavegacion a {
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    width: 70%;
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    transition: .5s;
+}
+
+.menunavegacion a:hover {
+    color: aquamarine;
+}
+
+
+.switch {
+    font-size: 10px;
+    background: #ffffff;
+border-radius: 50%;
+    border: none;
+    position: absolute;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+    top: 35%;
+    left: 95%;
+}
+
+
+.presentacion {
+    justify-items: center;
+    font-family: 'IBM Plex Sans', sans-serif;
+    padding: 100px;
+    margin: 100px 0px 0px 0px;
+    height: 250px;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 10% 35% 10% 20% 25%;
+    background-color: rgb(0, 0, 0);
+    font-size: 100%;
+    align-items: center;
+
+}
+
+
+
+.presentacion .grillainformacion {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-top: 70px;
+    text-align: right;
+    font-size: 1.2vw;
+    margin-top: -50px;
+
+}
+
+.mail {
+    color: aquamarine;
+}
+
+.presentacion .grillainformacion h3 {
+    margin-top: -50px;
+    color: whitesmoke;
+
+}
+
+.grillafoto {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    position: relative;
+    overflow: visible;
+    max-width: 180%;
+
+}
+
+
+#titulo_nombre {
+    font-size: 1.5vw;
+    z-index: 999;
+    margin-top: 25px;
+    margin-left: 0px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: whitesmoke;
+    border: 0px;
+    stroke-width: 1px;
+    display: block;
+}
+
+
+
+#titulo_nombre:hover {
+    color: aquamarine;
+    stroke: black;
+    -webkit-text-stroke-width: medium;
+    cursor: hand;
+    background-color: whitesmoke;
+    border: 0px;
+}
+
+.boton__nombre {
+    width: 100%;
+    max-width: 80%;
+
+}
+
+
+.grillafoto h1 {
+    color: black;
+    padding: 0px;
+    display: flex;
+}
+
+
+.imagen_carnet {
+    max-width: 100%;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.5);
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+
+.ocultar_redesSociales {
+    display: none;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+
+}
+
+.mostrar_redesSociales {
+    display: block;
+    left: 15vh;
+    font-size: 1.5vw;
+}
+
+.ocultar_redesSociales i {
+    
+    color: rgba(0, 0, 0, 0.637);
+    margin: 1.5vw;
+    margin-top: 10%;
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0);
+    transition: 0.5s ease;
+    position: relative;
+    display: inline-block;
+
+}
+
+
+
+.fa-instagram:hover {
+    background-color: rgb(204, 50, 153);
+    color: antiquewhite;
+    box-shadow: 0 0 15px rgb(204, 50, 153),
+        0 0 45px rgb(204, 50, 153),
+        0 0 75px rgb(204, 50, 153),
+        0 0 115px rgb(204, 50, 153);
+}
+
+.fa-twitter:hover {
+    background-color: rgb(57, 140, 207);
+    color: antiquewhite;
+    box-shadow: 0 0 15px cyan,
+        0 0 45px cyan,
+        0 0 75px cyan,
+        0 0 115px cyan;
+}
+
+.fa-facebook:hover {
+    background-color: rgb(35, 17, 196);
+    color: antiquewhite;
+    box-shadow: 0 0 15px blue,
+        0 0 45px blue,
+        0 0 75px blue,
+        0 0 115px blue;
+}
+
+.fa-youtube:hover {
+    background-color: rgb(148, 27, 12);
+    color: antiquewhite;
+    box-shadow: 0 0 15px rgb(148, 27, 12),
+        0 0 45px rgb(148, 27, 12),
+        0 0 75px rgb(148, 27, 12),
+        0 0 115px rgb(148, 27, 12);
+}
+
+.fa-linkedin:hover {
+    background-color: rgb(25, 14, 124);
+    color: antiquewhite;
+    box-shadow: 0 0 15px rgb(25, 14, 124),
+        0 0 45px rgb(25, 14, 124),
+        0 0 75px rgb(25, 14, 124),
+        0 0 115px rgb(25, 14, 124);
+}
+
+
+
+
+.aptitudes {
+    margin: 50px;
+    margin-top: 5%;
+    width: fit-content;
+    margin-left: 40px;
+    padding: 5px;
+}
+
+
+.cajitaaptitudes {
+    font-family: 'Signika', sans-serif;
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    margin: 0px;
+    padding: 100px 0PX 20px 0px;
+    background-color: whitesmoke;
+}
+
+.boton__aptitudes {
+    
+    font-family: 'Oswald', sans-serif;
+    transition: .5s;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 150%;
+    padding: 20px;
+    display: block;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: rgba(127, 255, 212, 0.466);
+}
+
+#boton__ocultarAptitudes:hover {
+    background-color: rgba(200, 210, 211, 0.705);
+    color: antiquewhite;
+    box-shadow: 0 0 15px rgba(115, 115, 192, 0.308),
+        0 0 45px rgba(115, 115, 192, 0.300),
+        0 0 75px rgba(115, 115, 192, 0.300),
+        0 0 115px rgba(115, 115, 192, 0.300);
+    border: none;
+}
+
+.ocultar {
+    display: none;
+}
+
+.mostrar {
+    display: block;
+}
+
+
+
+
+.aptitudes_blandas {
+    list-style: none;
+    font-style: oblique;
+}
+
+.aptitudes_duras {
+    font-style: oblique;
+    list-style: none;
+
+}
+
+#check {
+    border: none;
+    box-shadow: none;
+    margin-left: -150px;
+
+}
+
+.aptitudesduras {
+    text-align: center;
+    font-size: x-large;
+    margin: 60px;
+    display: inline-block;
+    color: black;
+    line-height: 1.5;
+    background-color: rgba(200, 210, 211, 0.705);
+    padding: 50px;
+    box-shadow: 0 0 15px rgba(115, 115, 192, 0.308),
+        0 0 45px rgba(115, 115, 192, 0.300),
+        0 0 75px rgba(115, 115, 192, 0.300),
+        0 0 115px rgba(115, 115, 192, 0.300);
+
+
+}
+
+
+
+.aptitudesblandas {
+    text-align: center;
+    font-size: x-large;
+    line-height: 1.5;
+    background-color: rgba(200, 210, 211, 0.705);
+    padding: 50px;
+    margin: 60px;
+    display: inline-block;
+    color: rgb(2, 2, 2);
+    box-shadow: 0 0 15px rgba(115, 115, 192, 0.308),
+        0 0 45px rgba(115, 115, 192, 0.300),
+        0 0 75px rgba(115, 115, 192, 0.300),
+        0 0 115px rgba(115, 115, 192, 0.300);
+}
+
+.aptitudes_blandas i {
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.637);
+    margin: 35px;
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0);
+    transition: 0.5s ease;
+}
+
+.aptitudes_duras i {
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.637);
+    margin: 35px;
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0);
+    transition: 0.5s ease;
+}
+
+
+.estudios {
+    z-index: 9;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: x-large;
+    max-width: 100%;
+    background-color: rgba(200, 210, 211, 0.918);
+    padding: 50px 100px 50px 100px;
+    margin: 60px;
+    text-align: justify;
+
+}
+
+.cursos {
+    background-color: rgba(200, 210, 211, 0.918);
+
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: x-large;
+
+    max-width: 100%;
+    margin: 60px;
+    padding: 50px 100px 50px 100px;
+    text-align: justify;
+}
+
+.certificado1 {
+    margin-top: 20px;
+    max-width: 100%;
+}
+
+.certificado2 {
+    margin-top: 20px;
+    max-width: 100%;
+}
+
+.ocultar_certificado_1 {
+    display: none;
+}
+
+.ocultar_certificado_2 {
+    display: none;
+
+}
+
+.mostrar_certificado_1 {
+    display: block;
+}
+
+.verCertificado1 {
+    width: fit-content;
+    padding: 10px;
+    font-family: 'Red Hat Display', sans-serif;
+    transition: .5s;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 75%;
+    margin-top: 20px;
+    border-color: rgb(127, 255, 212);
+    background-color: rgba(0, 0, 0, 0.705);
+    color: aliceblue;
+}
+
+.verCertificado2 {
+    width: fit-content;
+    padding: 10px;
+    font-family: 'Red Hat Display', sans-serif;
+    transition: .5s;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 75%;
+    margin-top: 20px;
+    border-color: rgb(127, 255, 212);
+    background-color: rgba(0, 0, 0, 0.705);
+    color: aliceblue;
+}
+
+
+.mostrar_certificado_2 {
+    display: block;
+}
+
+.experiencialaboral {
+
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: x-large;
+    max-width: 100%;
+    margin: 60px;
+    padding: 50px 100px 50px 100px;
+    text-align: justify;
+    background-color: rgba(200, 210, 211, 0.918);
+
+}
+
+
+
+.fecha {
+
+    margin: 35px 0px 5px 0px;
+    padding: 5px;
+
+    font-family: 'Ubuntu Condensed', sans-serif;
+
+    color: #039be5;
+    font-size: 125%;
+
+}
+
+.titulo_formulario {
+    margin: 80px 0px 50px 50px;
+    text-align: center;
+    margin: 50px;
+    padding: 60px;
+
+}
+
+.formulario {
+    font-family: 'Red Hat Display', sans-serif;
+    max-width: 100%;
+    width: 50%;
+    height: 80%;
+    color: aliceblue;
+    margin: auto;
+    margin-top: 90px;
+    padding: 20px;
+    box-shadow: 0 0 30px 1px rgba(171, 193, 197, 0.144);
+    position: relative;
+
+
+}
+
+.formulario__input,
+.formulario__label,
+.formulario__submit {
+    display: block;
+    width: 90%;
+    font-size: 1.3em;
+    margin-bottom: 30px;
+    padding: 20px;
+    margin: auto;
+
+
+
+}
+
+.formulario__input:hover {
+    background-color: rgba(47, 148, 119, 0.404);
+}
+
+.formulario__submit {
+
+    background-color: rgba(112, 197, 197, 0.8);
+    width: 90%;
+    padding: 10px 20px;
+    margin: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+    display: block;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.formulario__submit:hover {
+
+    background-color: rgba(83, 150, 150, 0.8);
+
+}
+
+.formulario__input:focus+.formulario__label {
+    margin-top: -175px;
+
+}
+
+
+.formulario__input {
+    background-color: rgba(93, 193, 211, 0.26);
+    padding: 20px;
+    border: 1px solid rgba(154, 235, 252, 0.712);
+    margin-bottom: 50px;
+}
+
+.formulario__label {
+    margin: 30px;
+    padding-left: 30px;
+    position: absolute;
+    margin-top: -120px;
+    transition: all 0.2s;
+    z-index: -20;
+}
+
+#trucazo {
+    opacity: 0;
+    color: var(--background-color);
+}
+
+.fijar {
+    margin-top: -160px;
+}
+
+.download a {
+    text-decoration: none;
+    color: aliceblue;
+
+}
+
+.download:hover a {
+    color: rgb(68, 65, 62);
+}
+
+.download a:visited {
+    color: #05f7ff;
+}
+
+
+
+.download {
+    width: fit-content;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    transition: .5s;
+    cursor: pointer;
+    border-radius: 30px;
+    font-size: 150%;
+    margin-top: 50px;
+    display: block;
+    border-color: rgb(127, 255, 212);
+    background-color: rgba(0, 0, 0, 0.705);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.download:hover {
+    font-family: 'Roboto', sans-serif;
+
+    background-color: rgba(85, 207, 228, 0.562);
+
+    box-shadow: 0 0 15px rgba(115, 115, 192, 0.308),
+        0 0 45px rgba(115, 115, 192, 0.300),
+        0 0 75px rgba(115, 115, 192, 0.300),
+        0 0 115px rgba(115, 115, 192, 0.300);
+    border: none;
+    text-decoration: none;
+}
+
+#final {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 50px;
+    color: aquamarine;
+    padding: 60px 0px 30px 10px;
+    font-size: medium;
+    text-align: left;
+}
+
+#final3 {
+    font-family: 'Signika', sans-serif;
+
+    color: rgba(203, 253, 253, 0.247);
+    margin: 50px;
+    box-shadow: none;
+    text-shadow: 0 0 3px #05cff39a, 0 0 6px #05b0f357, 0 0 12px #05f3f362, 0 0 24px #05f3e76b, 0 0 50px #05f3e777;
+}
+
+
+@media screen and (max-width: 1100px) {
+
+
+    body {
+        width: 100%;
+    }
+
+    .menuprincipal {
+        max-width: 100%;
+        font-size: 80%;
+        height: 140px;
+
+
+    }
+
+    header {
+        height: 140px;
+
+    }
+
+    .menunavegacion {
+        font-size-adjust: 80%;
+        flex-direction: column;
+        margin-top: 20px;
+
+    }
+
+    .mostrar_redesSociales i{
+        font-size: 150%;
+    }
+
+
+    .imglogo {
+
+        min-width: 60%;
+    }
+
+    .presentacion .grillainformacion {
+        font-size: 70%;
+
+    }
+
+
+    .imagen_carnet {
+        max-width: 200%;
+    }
+
+    #titulo_nombre {
+        font-size: 2.5vw;
+    }
+
+
+    .cajitaaptitudes {
+        font-size: 100%;
+
+    }
+
+    .boton__aptitudes {
+
+        font-size: 100%;
+
+    }
+
+
+
+    .aptitudesduras {
+        font-size: 75%;
+        margin: 25%;
+    }
+
+
+    .aptitudesblandas {
+        font-size: 75%;
+        margin: 25%;
+    }
+
+    .aptitudes_blandas i {
+        font-size: 75%;
+
+    }
+
+    .aptitudes_duras i {
+        font-size: 75%;
+        
+    }
+
+
+    .estudios {
+        max-width: 100%;
+        font-size: 80%;
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .cursos {
+        max-width: 100%;
+        font-size: 80%;
+        margin: 20px;
+        padding: 20px;
+
+    }
+
+    .experiencialaboral {
+        max-width: 100%;
+        font-size: 80%;
+        margin: 20px;
+        padding: 20px;
+    }
+
+
+    .download {
+        font-size: 70%;
+    }
+
+
+    .formulario h1 {
+        font-size: 100%;
+        margin: 30px;
+    }
+
+    .formulario {
+        font-size: 100%;
+
+    }
+
+    .formulario__input,
+    .formulario__label,
+    .formulario__submit {
+
+        font-size: 0.8em;
+        margin-left: 5px;
+    }
+
+
+}
+
+
+
+#rotacion {
+    display: none;
+    z-index: -100;
+}
+
+@media(max-width: 768px) and (orientation: landscape) {
+
+    #rotacion {
+        display: flex;
+        position: fixed;
+        top: 0;
+        bottom: 0px;
+        right: 0px;
+        left: 0px;
+        background: #63e2e6c7;
+        z-index: 990000;
+        width: 100%;
+        height: 100vh;
+        font-size: 190%;
+        align-items: center;
+        justify-content: center;
+        color: rgb(37, 37, 37);
+        font-family: 'Red Hat Display', sans-serif;
+        text-align: center;
+     
+    }
+    #rotacion br{
+        border-width: 22px;
+        border-color: antiquewhite;
+    }
+  
+
+  
+}
